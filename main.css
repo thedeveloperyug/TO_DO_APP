@@ -1,0 +1,71 @@
+body{
+
+  font-family: sans-serif;
+  background-color: azure;
+
+}
+.appcontainer{
+padding: 10px;
+}
+
+h1{
+  font-size:3em;
+  color: #494847;
+  margin-bottom: 20px;
+}
+
+.form-control{
+  width: 30%;
+  margin: 10px;
+  display: inline-block;
+}
+
+.add{
+  background-color: #205295;
+}
+.add:hover{
+  background-color: #243763;
+}
+
+.card{
+
+  display: inline-block;
+  min-width: 20%;
+}
+
+.list-item{
+  display: flex;
+}
+
+p{
+  margin: auto 20px;
+}
+
+.delete{
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+input[type=checkbox] {
+  accent-color: #205295;
+}
+input:checked+p {
+  text-decoration: line-through;
+  text-decoration-color: #080808;
+}
+
+@media only screen and (max-width: 600px) {
+  body{
+    margin-top: 7%;
+  }
+  h1{
+    font-size: 2.5rem;
+  }
+  .card{
+    min-width: 100%;
+  }
+  .form-control{
+    width: 60%;
+  }
+}
